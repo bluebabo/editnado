@@ -1,0 +1,45 @@
+{
+  "id": "family_big",
+  "meta": {
+    "name": "Family Album (large captions)",
+    "name_ko": "가족 기록 (큰 글씨)",
+    "description": "16:9. 어르신도 읽기 쉬운 큰 자막, 느린 전개, 따뜻한 색, 제목 카드 인트로",
+    "words": ["가족", "부모님", "어르신", "큰 글씨", "앨범", "추억", "family"],
+    "author": "editnado",
+    "version": "1.0.0",
+    "license": "MIT",
+    "price": "free",
+    "aspect": "16:9",
+    "preview": "preview.png",
+    "credits": "intro.ectemplate = EffectCraft 기본 템플릿 Title Card (ArtCraft, MIT/Apache-2.0)"
+  },
+  "video": {
+    "photo_seconds": 4.5,
+    "photo_zoom": [1.0, 1.06],
+    "clip_seconds": 5.0,
+    "transition_seconds": 0.6,
+    "color_preset": "Golden Dusk"
+  },
+  "subtitles": {
+    "size": 80,
+    "outline": 3,
+    "margin": 0.08,
+    "max_chars": 14,
+    "min_seconds": 2.0,
+    "max_seconds": 5.0
+  },
+  "intro": {
+    "template": "intro.ectemplate",
+    "wrap": 12,
+    "start": 0,
+    "seconds": 3.5,
+    "values": { "Title": "{title}", "Subtitle": "{date}" }
+  },
+  "audio": {
+    "bgm_duck_db": -18,
+    "bgm_fade_out_seconds": 3.0
+  },
+  "narration": { "gap_seconds": 0.8 },
+  "text": { "tone": "습니다" },
+  "blog": { "tone": "습니다" }
+}

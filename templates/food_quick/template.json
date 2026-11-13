@@ -1,0 +1,45 @@
+{
+  "id": "food_quick",
+  "meta": {
+    "name": "Food Shorts",
+    "name_ko": "맛집·먹방 (세로)",
+    "description": "9:16. 색이 살아나는 색감, 빠른 컷, 크고 굵은 흰 자막, 세로 스토리 인트로",
+    "words": ["맛집", "먹방", "음식", "카페", "요리", "food", "cafe"],
+    "author": "editnado",
+    "version": "1.0.0",
+    "license": "MIT",
+    "price": "free",
+    "aspect": "9:16",
+    "preview": "preview.png",
+    "credits": "intro.ectemplate = EffectCraft 기본 템플릿 Vertical 9:16 Story (ArtCraft, MIT/Apache-2.0)"
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "export_preset": "YouTube Shorts 1080×1920",
+    "max_seconds": 180,
+    "photo_seconds": 1.8,
+    "photo_zoom": [1.0, 1.2],
+    "clip_seconds": 2.2,
+    "transition_seconds": 0.15,
+    "color_preset": "Boost Vibrance"
+  },
+  "subtitles": {
+    "size": 70,
+    "outline": 3,
+    "margin": 0.22,
+    "max_chars": 10
+  },
+  "intro": {
+    "template": "intro.ectemplate",
+    "wrap": 5,
+    "start": 0,
+    "seconds": 2.0,
+    "values": { "Headline": "{title}", "Call to Action": "{date}" }
+  },
+  "audio": {
+    "bgm_duck_db": -13,
+    "bgm_fade_out_seconds": 1.0
+  },
+  "photo": { "set": { "color.saturation": 12, "light.exposure": 0.25 } }
+}

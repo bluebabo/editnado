@@ -1,0 +1,26 @@
+{
+  "id": "default",
+  "meta": {
+    "name": "Travel Vlog (landscape)",
+    "name_ko": "여행 브이로그 (가로)",
+    "description": "16:9 유튜브용. 제목 카드 인트로, 은은한 따뜻한 색, 흰 자막 아래 10%, 내레이션 때 배경음악 약 15%",
+    "words": ["기본", "브이로그", "여행", "일상", "가로", "유튜브", "travel", "vlog"],
+    "author": "editnado",
+    "version": "1.0.0",
+    "license": "MIT",
+    "price": "free",
+    "aspect": "16:9",
+    "preview": "preview.png",
+    "credits": "intro.ectemplate = EffectCraft 기본 템플릿 Title Card (ArtCraft, MIT/Apache-2.0)"
+  },
+  "video": {
+    "color_preset": "Warm Negative"
+  },
+  "intro": {
+    "template": "intro.ectemplate",
+    "wrap": 12,
+    "start": 0,
+    "seconds": 3.0,
+    "values": { "Title": "{title}", "Subtitle": "{date}" }
+  }
+}

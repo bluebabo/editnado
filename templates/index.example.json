@@ -1,0 +1,41 @@
+{
+  "format": 1,
+  "updated": "2026-11-13",
+  "note": "예시 — 실제 목록은 템플릿 홈페이지가 같은 형식으로 제공한다 (주소는 환경변수 VC_TEMPLATE_INDEX). 설치기는 이 파일을 자료로만 읽는다",
+  "templates": [
+    {
+      "id": "example_free",
+      "name_ko": "무료 예시",
+      "name": "Free example",
+      "description": "세로 · 느린 확대",
+      "author": "editnado",
+      "seller": "editnado",
+      "version": "1.0.0",
+      "license": "MIT",
+      "price": "free",
+      "aspect": "9:16",
+      "tags": ["여행", "감성"],
+      "preview": "https://example.com/templates/example_free.png",
+      "download": "https://example.com/templates/example_free-1.0.0.zip",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "store": null
+    },
+    {
+      "id": "example_paid",
+      "name_ko": "유료 예시",
+      "name": "Paid example",
+      "description": "가로 · 영화 같은 색감 · 움직이는 제목",
+      "author": "판매자 이름",
+      "seller": "seller-id",
+      "version": "1.0.0",
+      "license": "구매자 개인·상업 영상 사용 허락, 템플릿 재배포 금지",
+      "price": { "amount": 3900, "currency": "KRW" },
+      "aspect": "16:9",
+      "tags": ["시네마틱"],
+      "preview": "https://example.com/templates/example_paid.png",
+      "download": null,
+      "sha256": null,
+      "store": "https://example.com/store/example_paid"
+    }
+  ]
+}

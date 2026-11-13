@@ -1,0 +1,25 @@
+# Editnado
+
+> Editnado = edit + tornado ("nado" is also Korean for "me too": Edit? Nado!). Agent Skill (SKILL.md, agentskills.io format) for automatic video editing on Windows. An AI agent gives it a folder of photos, videos and an optional voice memo; it builds a YouTube Short, Reel or vlog with an intro title, Korean captions transcribed from the user's voice, ducked background music and a template look. Uses free local tools only: ArtCraft FilmCraft and EffectCraft (MIT/Apache-2.0), ffmpeg, whisper.cpp. No API keys or paid credits.
+
+Facts for agents:
+- Platform: Windows 10/11, PowerShell 5.1. Single entry point: `vc.cmd`
+- First run: `vc.cmd setup` prints what is missing and its size; ask the user, then `vc.cmd setup -Yes` (no admin rights; downloads verified by SHA256 and code signature)
+- Main command: `vc.cmd auto "<folder>" -Template <id> [-Out <dir>] [-Bgm <file>]` → writes `plan.json`, a half-size preview video, a contact sheet (`sheet_1.png`), a check image and one JSON summary line with scenes and spoken sentences
+- Quality first: before showing the user, check that each scene matches its sentence (fix `align` in plan.json), fix transcript typos, and look at the check image. Rendering and timing are done by the PC, not the agent
+- Revise: edit `plan.json` (format in references/edit-plan.md, style keys in references/preset-guide.md), then `vc.cmd build "<plan.json>" -Preview`; final = `vc.cmd build "<plan.json>"`. Blog stills: `vc.cmd stills "<plan.json>"`
+- Templates: default, shorts_fast, calm_mood, food_quick, family_big, tech_tutorial (`vc.cmd template list`)
+
+## Docs
+
+- [SKILL.md](SKILL.md): instructions and rules for agents (read first)
+- [README.md](README.md): overview, measured results, limits
+- [templates/README.md](templates/README.md): template format, install, seller rules
+- [references/edit-plan.md](references/edit-plan.md): plan.json format
+
+## Optional
+
+- [references/preset-guide.md](references/preset-guide.md): every profile/template key
+- [references/filmcraft-commands.md](references/filmcraft-commands.md): verified FilmCraft commands and pitfalls (only to change the editor)
+- [references/toolchain.md](references/toolchain.md): tool sources, licenses, MCP sizes
+- [references/cli-recipes.md](references/cli-recipes.md): photo correction, thumbnails, open tools

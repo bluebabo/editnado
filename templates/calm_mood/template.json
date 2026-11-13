@@ -1,0 +1,46 @@
+{
+  "id": "calm_mood",
+  "meta": {
+    "name": "Calm Mood (vertical)",
+    "name_ko": "잔잔한 감성 (세로)",
+    "description": "9:16. 사진을 길고 느리게 확대, 부드러운 필름 색감, 긴 전환, 작은 흰 자막, 배경음악은 조금 크게",
+    "words": ["잔잔하게", "감성", "여유", "느리게", "분위기", "calm", "mood"],
+    "author": "editnado",
+    "version": "1.0.0",
+    "license": "MIT",
+    "price": "free",
+    "aspect": "9:16",
+    "preview": "preview.png",
+    "credits": "intro.ectemplate = EffectCraft 기본 템플릿 Vertical 9:16 Story (ArtCraft, MIT/Apache-2.0)"
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "export_preset": "YouTube Shorts 1080×1920",
+    "max_seconds": 180,
+    "photo_seconds": 4.0,
+    "photo_zoom": [1.0, 1.08],
+    "clip_seconds": 4.0,
+    "transition_seconds": 0.8,
+    "color_preset": "Faded Print"
+  },
+  "subtitles": {
+    "size": 54,
+    "outline": 2,
+    "margin": 0.22,
+    "max_chars": 13
+  },
+  "intro": {
+    "template": "intro.ectemplate",
+    "wrap": 5,
+    "start": 0,
+    "seconds": 3.0,
+    "values": { "Headline": "{title}", "Call to Action": "{date}" }
+  },
+  "audio": {
+    "bgm_duck_db": -12,
+    "bgm_fade_out_seconds": 3.0
+  },
+  "text": { "tone": "해요" },
+  "blog": { "tone": "해요", "headings": "짧은 감성 소제목, 이모지 하나로 시작" }
+}

@@ -1,0 +1,73 @@
+{
+  "name": "_base",
+  "description": "모든 템플릿의 기본값. 템플릿은 바꿀 값만 적는다 (키 뜻은 references/preset-guide.md)",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "export_preset": "YouTube 1080p Full HD",
+    "max_seconds": 3600,
+    "photo_seconds": 3.0,
+    "photo_zoom": [1.0, 1.1],
+    "clip_seconds": 4.0,
+    "transition": "cross_dissolve",
+    "transition_seconds": 0.3,
+    "color_preset": null
+  },
+  "subtitles": {
+    "enabled": true,
+    "font": "Malgun Gothic",
+    "font_style": "Bold",
+    "size": null,
+    "color": "#FFFFFF",
+    "outline": 2,
+    "outline_color": "#000000",
+    "background": false,
+    "anchor": "bottom",
+    "margin": 0.10,
+    "max_chars": 18,
+    "lines": 2,
+    "min_seconds": 1.2,
+    "max_seconds": 3.5
+  },
+  "title": {
+    "enabled": true,
+    "font": "Malgun Gothic",
+    "font_style": "Bold",
+    "size": 96,
+    "y_fraction": 0.15,
+    "color": "#FFFFFF",
+    "seconds": 2.5
+  },
+  "intro": null,
+  "audio": {
+    "loudness_lufs": -14,
+    "clip_audio": "ambience",
+    "clip_duck_db": -12,
+    "bgm": null,
+    "bgm_duck_db": -16.5,
+    "bgm_fade_out_seconds": 2.0
+  },
+  "narration": {
+    "start_seconds": 0.5,
+    "gap_seconds": 0.4
+  },
+  "transcribe": {
+    "model": "auto",
+    "language": "auto"
+  },
+  "photo": {
+    "long_edge": 1920,
+    "quality": 90,
+    "set": { "color.vibrance": 8, "light.contrast": 5 }
+  },
+  "text": {
+    "tone": "해요"
+  },
+  "blog": {
+    "tone": "해요",
+    "headings": "짧은 소제목, 이모지 하나로 시작",
+    "photos": "글 한 덩이 뒤에 사진 2~4장 묶음",
+    "facts": "소감·사진·찍은 시각에 있는 것만. 가격·운영 시간 같은 정보는 사용자가 준 것만"
+  }
+}

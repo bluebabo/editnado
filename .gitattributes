@@ -1,0 +1,6 @@
+# Windows 배치·PowerShell 은 CRLF 로 받아야 goto·라벨이 깨지지 않는다
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.png binary
+*.ectemplate binary
+release.ps1 export-ignore
