@@ -10,7 +10,8 @@ function Get-ToolsRoots {
     return $roots
 }
 
-function Get-InstallRoot { return (Get-ToolsRoots)[0] }
+# @() 필수: 자리가 하나뿐이면(일반 사용자 PC) 함수 결과가 글자열로 풀려 [0] 이 첫 글자 「C」가 된다 (11-14 실측)
+function Get-InstallRoot { return @(Get-ToolsRoots)[0] }
 
 function Get-CraftPath {
     param([string]$Name)

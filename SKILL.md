@@ -5,7 +5,7 @@ license: MIT
 compatibility: Windows 10/11 with PowerShell 5.1. On first use `vc.cmd setup` installs FilmCraft/EffectCraft (ArtCraft, MIT/Apache-2.0), ffmpeg and whisper.cpp without admin rights after asking the user. Internet is needed only for setup and template downloads.
 metadata:
   author: editnado
-  version: "2.3.0"
+  version: "2.3.1"
 ---
 
 # Editnado — 사진·영상·소감으로 자동 편집
@@ -116,6 +116,7 @@ metadata:
 ### 개정 이력
 - 2026-11-12: 최초 작성 → 같은 날 대화형 계획서 + 실행기 `vc.ps1`
 - 2026-11-13: 2.0 — 자동 초안 `auto`, 설치 `setup`, 템플릿 6종(인트로·색감), 받아쓰기 `transcribe`, 자막 고르게 나누기, 현장음 덕킹, 말투 고르기, 공개 표준(agentskills.io) 앞머리
+- 2026-11-14: 2.3.1 — 도구 설치·백업 자리가 일반 PC 에서 상대 폴더 「C」로 잡히던 문제 고침 (vc_paths Get-InstallRoot), ArtCraft 라이선스 표기 MIT/Apache-2.0
 - 2026-11-13: 2.3 — 이름 Editnado (옛 video-craft): 폴더·저장소·릴리스 zip 이름, 소개 문구 「Edit? 나도!」
 - 2026-11-13: 2.2 — 스킬 새 판 받기 `vc.cmd update`(깃·릴리스 zip·직접 받은 zip), 릴리스 절차(`release.ps1`, 관리자용)
 - 2026-11-13: 2.1 — 품질 우선 원칙, 장면을 말한 문장에 맞추기(`align`·`tail_seconds`), 자막을 어미·조사 뒤에서 끊기, 사진 자르기(`crop`), 블로그용 한 컷(`stills`), auto 미리보기 절반 크기·현장음 살리기·제목 넘침 경고
